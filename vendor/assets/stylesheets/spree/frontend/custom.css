@@ -1,11 +1,45 @@
+figure#logo img {
+  min-width: 270px
+
+}
+
+
 ul#products li .product-image {
 
+}
+
+ul#products li .product-image:hover {
+  border-color: #BCC9EF
+}
+
+ul#products li .product-image img{
+  min-height: 130px
+
+}
+
+ul#products li .product-image img{
+  min-width: 100px
 
 }
 
 ul#products li a.info {
-
   color: #404042
+}
 
+ul#products li a.info {
+  font-size: 13px
+}
+
+ul#products li .price {
+  color: #676A73
+}
+
+ul#products li .price {
+  font-size: 11.5px
+
+}
+
+#product-images #main-image img {
+  min-height: 260px
 
 }
