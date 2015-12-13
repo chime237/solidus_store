@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20151212062624) do
+ActiveRecord::Schema.define(version: 20151212213635) do
 
   create_table "friendly_id_slugs", force: :cascade do |t|
     t.string   "slug",                      null: false
@@ -767,6 +767,15 @@ ActiveRecord::Schema.define(version: 20151212062624) do
   end
 
   add_index "spree_shipping_rates", ["shipment_id", "shipping_method_id"], name: "spree_shipping_rates_join_index", unique: true
+
+  create_table "spree_signifyd_order_scores", force: :cascade do |t|
+    t.integer  "order_id"
+    t.integer  "score"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  add_index "spree_signifyd_order_scores", ["order_id"], name: "index_spree_signifyd_order_scores_on_order_id", unique: true
 
   create_table "spree_state_changes", force: :cascade do |t|
     t.string   "name"
