@@ -1,6 +1,40 @@
 figure#logo img {
-  min-width: 270px
+  max-width: 370px
 
+}
+
+figure#logo img {
+  max-height: 110px
+
+}
+
+figure#logo img {
+  padding: 0
+}
+
+nav#top-nav-bar ul li a {
+  color: black
+}
+
+
+input[type="submit"] {
+      background-color: #3D59A8
+
+    }
+
+
+nav #main-nav-bar li:first-child a {
+
+  color: black
+
+}
+
+nav #main-nav-bar li#link-to-cart a {
+  color: black
+}
+
+ul, ol {
+color: #928E93
 }
 
 
@@ -34,6 +68,10 @@ ul#products li .price {
   color: #676A73
 }
 
+ul#products li {
+  padding: 24px
+}
+
 ul#products li .price {
   font-size: 11.5px
 
@@ -42,4 +80,9 @@ ul#products li .price {
 #product-images #main-image img {
   min-height: 260px
 
+}
+
+#product-description .product-title {
+
+  color: #151515
 }
